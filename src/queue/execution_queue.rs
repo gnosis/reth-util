@@ -68,9 +68,11 @@ where
 
 #[cfg(test)]
 mod tests {
-    use std::sync::mpsc;
     use std::{
-        sync::mpsc::{Receiver, Sender},
+        sync::{
+            mpsc,
+            mpsc::{Receiver, Sender},
+        },
         time::Duration,
     };
 

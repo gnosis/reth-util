@@ -101,7 +101,6 @@ mod tests {
         assert_eq!(aq.wait_for_batch(), Some(vec![1, 2]));
         assert_eq!(aq.wait_for_batch(), Some(vec![3, 4]));
         assert_eq!(aq.wait_for_batch(), Some(vec![5]));
-        
     }
 
     #[test]
@@ -131,5 +130,4 @@ mod tests {
         assert_eq!(aq.enqueue(5), false);
         assert_eq!(aq.enqueue(6), false);
     }
-
 }
